@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+npm-debug.log
+yarn-error.log
+node_modules
+config.js
+middlewares/auth.js
+utils/aythCode.js

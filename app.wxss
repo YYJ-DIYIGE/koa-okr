@@ -1,0 +1,7 @@
+.page-container{
+  padding: 15px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/okrDetall/okrDetall",
+    "pages/todo_keyresult/todo_keyresult",
+    "pages/okrCreate/okrCreate",
+    "pages/todos/todo",
+    "pages/okr/okr",
+    "pages/okrEdit/okrEdit",
+    "pages/done/done"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "backgroundColor": "#333",
+    "color": "#f5f5f5",
+    "selectedColor": "#999",
+    "list":[
+      {
+        "pagePath": "pages/todos/todo",
+        "text": "Todo",
+        "iconPath": "/image/todo.png",
+        "selectedIconPath":"/image/todo1.png"
+      },
+      {
+        "pagePath": "pages/done/done",
+        "text": "Done",
+        "iconPath": "/image/done.png",
+        "selectedIconPath":"/image/done1.png"
+      },
+      {
+        "pagePath": "pages/okr/okr",
+        "text": "Okr",
+        "iconPath": "/image/plus.png",
+        "selectedIconPath":"/image/plus1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

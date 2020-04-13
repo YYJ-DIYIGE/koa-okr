@@ -1,0 +1,16 @@
+<view class="page-container">
+<view class="okr-section"></view>
+  <navigator url="/pages/okrCreate/okrCreate" class="okr-create" hover-class="btn-hover">添加 OKR</navigator>
+  <view class="okr-list">
+    <view class="okr-item {{item.state == 1? 'active' : ''}}"
+     wx:for="{{objective}}" 
+     wx:key="unpique" 
+     data-id="{{item.id}}" 
+     data-state="{{item.state}}" 
+     bindtap="operation">
+      <view class="okr-item-title">{{item.title}}</view>
+      <view class="okr-item-time">· 创建时间：{{item.create_time}}</view>
+      <view class="okr-item-time" wx:if="{{item.state == 1}}">· 完成时间：{{item.finish_time}}</view>
+    </view>
+  </view>
+</view>

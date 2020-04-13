@@ -1,0 +1,14 @@
+<view class="page-container">
+  <view class="done-content">
+    <view class="done-title">已完成TOdos，真棒~~</view>
+    <view class="done-list">
+      <view class="done-item {{item.status == 1? 'active' : ''}}" bindtap="operation" wx:for="{{done}}" wx:key="unique" data-id="{{item.id}}" data-index="{{index}}">
+        <view class="done-item-text">
+          <view class="done-item-okr">{{item.title}}</view>
+          <view class="done-item-time">· 创建时间：{{item.created_time}}</view>
+          <view class="done-item-time" wx:if="{{item.finished_time}}">· 完成时间：{{item.finished_time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
